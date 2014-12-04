@@ -3,7 +3,7 @@ var spawn = require('child_process').spawn;
 var watch = require('node-watch');
 var chalk = require('chalk');
 var yargs = require('yargs');
-var argv = yargs.alias('w', 'watch').argv;
+var argv = yargs.argv;
 
 var SRC_DIR = 'src';
 var SRC_MAIN = 'src/main.js';
@@ -12,61 +12,28 @@ var SASS_DIR = 'sass';
 var SASS_ROOT = 'sass/index.scss';
 var DIST_CSS = 'dist/css/index.css';
 
-// fn (input: string)
-function getOutputAggregator(input) {
-  return function (data) {
-    input += data;
-  }
+var BUILD_DEV = false;
+
+if (argv.h || argv.help) {
+  console.log('build.js - a simple node program for kicking off my builds.');
+  console.log('  flags');
+  console.log('  -d / --dev : use development settings (e.g. sourcemapping)');
+  console.log('  -w / --watch : watch files for changes and kick off builds accordingly');
+  process.exit();
 }
 
-// fn (which: string, args: array)
-function spawnProcess(which, args) {
-  var browserify = spawn(which, args);
-  var output = '';
-  var errors = '';
-  browserify.stdout.on('data', function (data) {
-    output += data;
-  });
-  browserify.stderr.on('data', function (data) {
-    errors += data;
-  });
-  browserify.on('close', function () {
-    if (which !== 'node-sass') {
-      if (errors.length > 0) {
-        console.log(chalk.red(which + ' closed with errors:\n' + errors));
-      } else {
-        console.log(chalk.green(which + ' closed successfully.'));
-      }
-    } else {
-      console.log(chalk.yellow(errors));
-    }
-  });
-}
-
-function buildBrowserify () {
-  var args = [
-    SRC_MAIN,
-    '-t',
-    'reactify',
-    '-o',
-    DIST_MAIN
-  ];
-  spawnProcess('browserify', args);
-}
-
-function buildSass() {
-  var args = [
-    SASS_ROOT,
-    DIST_CSS
-  ];
-  spawnProcess('node-sass', args);
+if (argv.d || argv.dev) {
+  console.log('Using DEV builds');
+  BUILD_DEV = true;
 }
 
 // Runs every time
 buildBrowserify();
 buildSass();
 
-if (argv.watch) {
+if (argv.w || argv.watch) {
+  console.log('Watching files for changes');
+
   watch(SRC_DIR, function () {
     console.log('Kicking off browserify build');
     buildBrowserify();
@@ -76,4 +43,54 @@ if (argv.watch) {
     console.log('Kicking off sass build');
     buildSass();
   });
+}
+
+// fn (input: string)
+function getOutputAggregator(input) {
+  return function (data) {
+    input += data;
+  }
+}
+
+// fn (which: string, args: array, startTime: number)
+function spawnProcess(which, args, startTime) {
+  var child = spawn(which, args);
+  var output = '';
+  var errors = '';
+  child.stdout.on('data', function (data) {
+    output += data;
+  });
+  child.stderr.on('data', function (data) {
+    errors += data;
+  });
+  child.on('close', function () {
+    var timeInfo = ' in {TIME} s'.replace('{TIME}', (Date.now() - startTime) / 1000);
+    if (which !== 'node-sass') {
+      if (errors.length > 0) {
+        console.log(chalk.red(which + ' closed with errors' + timeInfo + ':\n' + errors));
+      }
+    } else {
+      console.log(chalk.yellow(errors));
+    }
+    console.log(chalk.green(which + ' closed' + timeInfo));
+  });
+}
+
+function buildBrowserify() {
+  var args = [
+    SRC_MAIN,
+    '-t',
+    'reactify',
+    '-o',
+    DIST_MAIN
+  ];
+  spawnProcess('browserify', args, Date.now());
+}
+
+function buildSass() {
+  var args = [
+    SASS_ROOT,
+    DIST_CSS
+  ];
+  spawnProcess('node-sass', args, Date.now());
 }
