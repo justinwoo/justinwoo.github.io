@@ -1,0 +1,18 @@
+body {
+  font-family: "Helvetica"; }
+
+.container {
+  width: 980px;
+  padding-top: 20px;
+  margin: auto; }
+
+.left-column {
+  float: left;
+  width: 245px; }
+
+.right-column {
+  float: right;
+  width: 735px; }
+
+.avatar {
+  border-radius: 10px; }

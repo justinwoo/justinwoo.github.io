@@ -1,0 +1,25 @@
+$containerWidth: 980px;
+
+body {
+  font-family: "Helvetica";
+}
+
+.container {
+  width: $containerWidth;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.left-column {
+  float: left;
+  width: $containerWidth / 4;
+}
+
+.right-column {
+  float: right;
+  width: $containerWidth / 4 * 3;
+}
+
+.avatar {
+  border-radius: 10px;
+}
