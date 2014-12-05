@@ -1,0 +1,44 @@
+@import 'vars';
+@import 'icons';
+
+.left-column-children {
+  display: block;
+}
+
+.my-roles {
+  margin: 10px 0;
+}
+
+.avatar {
+  height: $containerWidth / 4;
+  width: $containerWidth / 4;
+}
+
+.my-name {
+  @extend .left-column-children;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.my-description {
+  @extend .left-column-children;
+  font-size: 20px;
+  color: $gray;
+}
+
+.my-info {
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  padding: 10px 0;
+  list-style: none;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.my-info a, .announcement a {
+  text-decoration: none;
+
+  &:visited {
+    color: blue;
+  }
+}

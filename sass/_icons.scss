@@ -1,0 +1,37 @@
+@import 'font-awesome/font-awesome';
+
+.icons {
+  @extend .fa;
+  @extend .fa-fw;
+  margin-right: 5px;
+}
+
+.location-icon {
+  @extend .icons;
+  @extend .fa-map-marker;
+}
+
+.email-icon {
+  @extend .icons;
+  @extend .fa-envelope-o;
+}
+
+.github-icon {
+  @extend .icons;
+  @extend .fa-github;
+}
+
+.twitter-icon {
+  @extend .icons;
+  @extend .fa-twitter;
+}
+
+.qiita-icon {
+  @extend .icons;
+  @extend .fa-archive;
+}
+
+.speakerdeck-icon {
+  @extend .icons;
+  @extend .fa-area-chart;
+}

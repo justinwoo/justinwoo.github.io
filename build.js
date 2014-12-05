@@ -39,7 +39,7 @@ if (argv.w || argv.watch) {
     buildBrowserify();
   });
 
-  watch(SASS_ROOT, function () {
+  watch(SASS_DIR, function () {
     console.log('Kicking off sass build');
     buildSass();
   });
@@ -84,6 +84,9 @@ function buildBrowserify() {
     '-o',
     DIST_MAIN
   ];
+  if (BUILD_DEV) {
+    args.push('-d');
+  }
   spawnProcess('browserify', args, Date.now());
 }
 
@@ -92,5 +95,8 @@ function buildSass() {
     SASS_ROOT,
     DIST_CSS
   ];
+  if (BUILD_DEV) {
+    args.push('--source-map');
+  }
   spawnProcess('node-sass', args, Date.now());
 }

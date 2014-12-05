@@ -5,7 +5,10 @@ var Application = React.createClass({
   render: function () {
     return (
       <div className="right-column">
-        <h1>Hello! This is still work in progress.</h1>
+        <h1 className="welcome-message">
+          {this.props.welcomeMessage}
+        </h1>
+        {this.props.messageBody}
       </div>
     );
   }

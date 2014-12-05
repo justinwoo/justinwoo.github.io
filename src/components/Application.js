@@ -7,8 +7,14 @@ var Application = React.createClass({
     return (
       <div className="container">
         <div className="columns">
-          <LeftColumn/>
-          <RightColumn/>
+          <LeftColumn
+            myInfo={this.props.myInfo}
+            announcement={this.props.announcement}
+          />
+          <RightColumn
+            welcomeMessage={this.props.welcomeMessage}
+            messageBody={this.props.messageBody}
+          />
         </div>
       </div>
     );
