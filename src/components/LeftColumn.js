@@ -12,10 +12,12 @@ var LeftColumn = React.createClass({
     });
     return (
       <div className="left-column">
-        <img
-          className="avatar"
-          src="https://avatars1.githubusercontent.com/u/2396926?v=3&amp;s=460"
-        />
+        <a href="http://goo.gl/PPDzf2">
+          <img
+            className="avatar"
+            src="https://avatars1.githubusercontent.com/u/2396926?v=3&amp;s=460"
+          />
+        </a>
         <div className="my-roles">
           <span className="my-name">Justin Woo</span>
           <span className="my-description">Developer</span>

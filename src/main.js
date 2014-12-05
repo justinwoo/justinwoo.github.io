@@ -35,7 +35,11 @@ var announcement = (
   </div>
 )
 
-var welcomeMessage = 'Welcome to my home page!';
+var welcomeMessage = (
+  <h1 className="welcome-message">
+    Welcome to my home page in 帰宅.部!
+  </h1>
+);
 
 var messageBody = (
   <div className="message-body">

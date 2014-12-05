@@ -5,9 +5,7 @@ var Application = React.createClass({
   render: function () {
     return (
       <div className="right-column">
-        <h1 className="welcome-message">
-          {this.props.welcomeMessage}
-        </h1>
+        {this.props.welcomeMessage}
         {this.props.messageBody}
       </div>
     );
