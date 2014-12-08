@@ -20,6 +20,7 @@
     "browserify": "^6.3.3",
     "chalk": "^0.5.1",
     "jquery": "^2.1.1",
+    "kimagure-etch-sketch": "0.0.2",
     "node-sass": "^1.2.3",
     "node-watch": "^0.3.4",
     "react": "^0.12.1",

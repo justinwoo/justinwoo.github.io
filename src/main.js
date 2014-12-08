@@ -1,5 +1,6 @@
 var React = require('react');
 var Application = require('./components/Application');
+var EtchSketch = require('kimagure-etch-sketch');
 
 var myInfo = [{
   className: 'location',
@@ -45,6 +46,10 @@ var messageBody = (
   <div className="message-body">
     <p>
       Please see the information on the left.
+    </p>
+    <p>
+      Play with my Etch a Sketch here: (press ? for help)
+      <EtchSketch bindWindow={true} className="my-etch-sketch"/>
     </p>
   </div>
 )
