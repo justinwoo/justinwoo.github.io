@@ -4,16 +4,22 @@ set -e
 # build our app
 make build
 
+# copy assets to pages
+rm -rf pages || exit 0;
+mkdir pages;
+cp index.html pages
+cp main.js pages
+cp *.eot pages
+cp *.ttf pages
+cp *.svg pages
+cp *.woff pages
+
+# initialize and commit everything in pages
+cd pages
+git init
 git config user.name "Travis"
 git config user.email "moomoowoo@gmail.com"
-
-# add all our assets
-git add -f index.js
-git add -f *.eot
-git add -f *.ttf
-git add -f *.svg
-git add -f *.woff
-
+git add .
 git commit -m "github pages deploy"
 
 # hide my output for security reasons

@@ -2,11 +2,11 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: './src/js/index.js'
+    app: './src/js/main.js'
   },
   output: {
     path: './',
-    filename: 'index.js'
+    filename: 'main.js'
   },
   module: {
     loaders: [{
