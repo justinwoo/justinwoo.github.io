@@ -1,2 +1,7 @@
 node_modules
 dist
+index.js*
+*.svg
+*.eot
+*.ttf
+*.woff
