@@ -1,4 +1,4 @@
-script: bash ./deploy.sh
+script: bash ./scripts/publish-gh-pages.sh
 env:
   global:
   - GH_REF: github.com/kimagure/kimagure.github.io.git
