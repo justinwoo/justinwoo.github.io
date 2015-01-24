@@ -8,11 +8,7 @@ make build
 rm -rf pages || exit 0;
 mkdir pages;
 cp index.html pages
-cp main.js pages
-cp *.eot pages
-cp *.ttf pages
-cp *.svg pages
-cp *.woff pages
+cp -r dist pages/dist
 
 # initialize and commit everything in pages
 cd pages
