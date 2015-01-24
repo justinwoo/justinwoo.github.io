@@ -1,3 +1,6 @@
+// load styling with webpack
+require('../sass/index.scss');
+
 var React = require('react');
 var Application = require('./components/Application');
 var EtchSketch = require('kimagure-etch-sketch');
