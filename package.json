@@ -1,5 +1,5 @@
 {
-  "name": "kimagure.github.io",
+  "name": "justinwoo.github.io",
   "version": "1.1.0",
   "description": "My homepage",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kimagure/kimagure.github.io.git"
+    "url": "https://github.com/justinwoo/justinwoo.github.io.git"
   },
   "author": "Justin Woo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kimagure/kimagure.github.io/issues"
+    "url": "https://github.com/justinwoo/justinwoo.github.io/issues"
   },
-  "homepage": "https://github.com/kimagure/kimagure.github.io",
+  "homepage": "https://github.com/justinwoo/justinwoo.github.io",
   "devDependencies": {
     "6to5": "^2.13.7",
     "6to5-loader": "^2.0.0",

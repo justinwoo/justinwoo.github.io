@@ -13,7 +13,7 @@ var myInfo = [{
   outlet: <a href="mailto:justin@gohome.club">justin@gohome.club</a>
 }, {
   className: 'github',
-  outlet: <a href="https://github.com/kimagure">kimagure</a>
+  outlet: <a href="https://github.com/justinwoo">justinwoo</a>
 }, {
   className: 'twitter',
   outlet: <a href="https://twitter.com/jusrin00">@jusrin00</a>
@@ -22,7 +22,7 @@ var myInfo = [{
   outlet: <a href="http://qiita.com/kimagure">Qiita</a>
 }, {
   className: 'speakerdeck',
-  outlet: <a href="https://speakerdeck.com/kimagure">Speakerdeck</a>
+  outlet: <a href="https://speakerdeck.com/justinwoo">Speakerdeck</a>
 }];
 
 var announcement = (
