@@ -7,7 +7,7 @@ var EtchSketch = require('kimagure-etch-sketch');
 
 var myInfo = [{
   className: 'location',
-  outlet: <a href="http://goo.gl/pWEQis">Washington DC</a>
+  outlet: '✈・旅行中'
 }, {
   className: 'email',
   outlet: <a href="mailto:justin@gohome.club">justin@gohome.club</a>
@@ -28,11 +28,12 @@ var myInfo = [{
 var announcement = (
   <div className="announcement">
     <p>
-      Live in the DC area? Cool, let's
-      <a href="mailto:moomoowoo@gmail.com"> hang out. </a>
+      I'm periodically in DC, so please
+      <a href="mailto:moomoowoo@gmail.com"> drop me a line </a>
+      if you want to hang out! (No recruiters, please.)
     </p>
     <p>
-      私の日本語は下手ですが、チャットしたかっらぜひ
+      私の日本語は下手ですが、チャットしたかったらぜひ
       <a href="mailto:moomoowoo@gmail.com">連絡</a>
       してください。
     </p>
@@ -49,6 +50,10 @@ var messageBody = (
   <div className="message-body">
     <p>
       Please see the information on the left.
+    </p>
+    <p>
+      I will not entertain any employment opportunities in the Washington metro/DMV
+      area, so please stop e-mailing me about them.
     </p>
     <p>
       Play with my Etch a Sketch here: (press ? for help)
