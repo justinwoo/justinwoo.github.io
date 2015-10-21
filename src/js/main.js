@@ -9,9 +9,6 @@ var myInfo = [{
   className: 'location',
   outlet: '✈・旅行中'
 }, {
-  className: 'email',
-  outlet: <a href="mailto:justin@gohome.club">justin@gohome.club</a>
-}, {
   className: 'github',
   outlet: <a href="https://github.com/justinwoo">justinwoo</a>
 }, {
@@ -27,16 +24,8 @@ var myInfo = [{
 
 var announcement = (
   <div className="announcement">
-    <p>
-      I'm periodically in DC, so please
-      <a href="mailto:moomoowoo@gmail.com"> drop me a line </a>
-      if you want to hang out! (No recruiters, please.)
-    </p>
-    <p>
-      私の日本語は下手ですが、チャットしたかったらぜひ
-      <a href="mailto:moomoowoo@gmail.com">連絡</a>
-      してください。
-    </p>
+    I like to connect with folks, but e-mail just gets me sapmmed by recruiters.
+    Please reach out on Twitter!
   </div>
 )
 
@@ -49,11 +38,7 @@ var welcomeMessage = (
 var messageBody = (
   <div className="message-body">
     <p>
-      Please see the information on the left.
-    </p>
-    <p>
-      I will not entertain any employment opportunities in the Washington metro/DMV
-      area, so please stop e-mailing me about them.
+      I'm totally done with the Washington area. Don't spam me with offers from there.
     </p>
     <p>
       Play with my Etch a Sketch here: (press ? for help)
