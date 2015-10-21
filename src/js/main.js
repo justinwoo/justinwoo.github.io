@@ -24,7 +24,7 @@ var myInfo = [{
 
 var announcement = (
   <div className="announcement">
-    I like to connect with folks, but e-mail just gets me sapmmed by recruiters.
+    I like to chat and hang out with folks, but e-mail just gets me spammed by recruiters.
     Please reach out on Twitter!
   </div>
 )
