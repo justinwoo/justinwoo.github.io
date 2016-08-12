@@ -7,7 +7,6 @@ make build
 # copy assets to pages
 rm -rf pages || exit 0;
 mkdir pages;
-cp CNAME pages
 cp index.html pages
 cp -r dist pages/dist
 
