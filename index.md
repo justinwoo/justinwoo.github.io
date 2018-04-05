@@ -42,6 +42,12 @@ Most all of my blog posts are on [Qiita](http://qiita.com/kimagure) and are almo
 
 In 2017, I wrote 30 blog posts, of which 27 had content about PureScript and 3 had content about Haskell. I plan to write at least 12 but less than 50 posts for 2018.
 
+### 4 Apr 2018
+
+I was a guest in April 2018 for the podcast CoRecursive with Adam Bell: <https://corecursive.com/010-purescript-and-avocados-with-justin-woo>.
+
+In the episode, I talk about things that are good about PureScript, some of the things I believe about writing programs, about avocadoes and kabocha, and about the importance of culture in programming language communities.
+
 ### 1 Sep 2017
 
 I was a speaker at Small FP Conf:
