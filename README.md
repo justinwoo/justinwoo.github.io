@@ -38,9 +38,7 @@ I have previously attended the [NoVA Code & Coffee](https://www.meetup.com/NoVA-
 
 ## Small notes
 
-Most all of my blog posts are on [Qiita](http://qiita.com/kimagure) and are almost exclusively about PureScript and Haskell.
-
-In 2017, I wrote 30 blog posts, of which 27 had content about PureScript and 3 had content about Haskell. I plan to write at least 12 but less than 50 posts for 2018.
+I have a [repository](https://github.com/justinwoo/my-blog-posts) of my blog posts, which are mostly posted on [Qiita](http://qiita.com/kimagure) and are almost exclusively about PureScript and Haskell.
 
 ### 4 Apr 2018
 
