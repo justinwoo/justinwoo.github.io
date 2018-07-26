@@ -40,6 +40,12 @@ I have previously attended the [NoVA Code & Coffee](https://www.meetup.com/NoVA-
 
 I have a [repository](https://github.com/justinwoo/my-blog-posts) of my blog posts, which are mostly posted on [Qiita](http://qiita.com/kimagure) and are almost exclusively about PureScript and Haskell.
 
+### 14 Jul 2018
+
+I was invited to speak about PureScript at the Front-End x Design Conference in Taipei, Taiwan: <http://2018.fedc.tw/>. I spoke about PureScript features that make it unique and some of the ways people might readdress ways they think about modeling problems.
+
+I have recorded a video where I go over my slides from the conference: <https://www.youtube.com/watch?v=iaQo_kGY-Lc>
+
 ### 4 Apr 2018
 
 I was a guest in April 2018 for the podcast CoRecursive with Adam Bell: <https://corecursive.com/010-purescript-and-avocados-with-justin-woo>.
